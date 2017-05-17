@@ -1,0 +1,865 @@
+diff -r 3b96a8386060 -r e6c03eaed449 config.template.php
+--- a/config.template.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/config.template.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -194,6 +194,9 @@
+ // Maximum time limit for PHP script execution (in seconds)
+ $php_max_execution_time = 0;
+ 
++// Maximum number of  Mailboxes in mail converter
++$max_mailboxes = 3;
++
+ // Set the default timezone as per your preference
+ $default_timezone = 'Europe/Moscow';
+ 
+diff -r 3b96a8386060 -r e6c03eaed449 data/CRMEntity.php
+--- a/data/CRMEntity.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/data/CRMEntity.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -153,9 +153,11 @@
+ 		// Check 2
+ 		$save_file = 'true';
+ 		//only images are allowed for these modules
+-		if ($module == 'Contacts' || $module == 'Products') {
+-			$save_file = validateImageFile($file_details);
+-		}
++        //SalesPlatform.ru begin
++		//if ($module == 'Contacts' || $module == 'Products') {
++		//	$save_file = validateImageFile($file_details);
++		//}
++        //SalesPlatform.ru end
+ 
+ 		$binFile = sanitizeUploadFileName($file_name, $upload_badext);
+ 
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/EmailTemplates.php
+--- a/languages/en_us/EmailTemplates.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/EmailTemplates.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -8,12 +8,15 @@
+  * All Rights Reserved.
+  *************************************************************************************/
+ $languageStrings = array(
++	'Email Templates' => 'Email Templates',
+ 	'LBL_ADD_RECORD' => 'Add Email Template',
+ 	'SINGLE_EmailTemplates' => 'Email Template',
+ 	'LBL_EMAIL_TEMPLATES'=> 'Email Templates',
+ 	'LBL_EMAIL_TEMPLATE' => 'Email Template',
+ 	
+ 	'LBL_TEMPLATE_NAME' => 'Template name',
++	'Templatename' => 'Template name',
++	'Template Name' => 'Template name',
+ 	'LBL_DESCRIPTION' => 'Description',
+ 	'LBL_SUBJECT' => 'Subject',
+ 	'LBL_GENERAL_FIELDS' => 'General Fields',
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/PBXManager.php
+--- a/languages/en_us/PBXManager.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/PBXManager.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -8,6 +8,7 @@
+  * All Rights Reserved.
+  *************************************************************************************/
+ $languageStrings = array(
++    'PBXManager' => 'Calls',
+ 	
+     //Blocks
+     'LBL_PBXMANAGER_INFORMATION' => 'Call Details',
+@@ -30,4 +31,15 @@
+     
+     'SINGLE_PBXManager' => 'Call Record' ,
+ 
++    'Call Status' => 'Status',
++    'Customer Number' => 'Customer Number',
++    'Customer' => 'Customer',
++    'User' => 'User',
++    'Start Time' => 'Start Time',
++    'Direction' => 'Direction',
++    'Customer Type' => 'Customer Type',
++    'End Time' => 'End Time',
++    'Source UUID' => 'Source UUID',
++    'Gateway' => 'Gateway',
++    'Incoming Line Name' => 'Incoming Line Name',
+ );
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/ProjectTask.php
+--- a/languages/en_us/ProjectTask.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/ProjectTask.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -8,6 +8,7 @@
+  * All Rights Reserved.
+  *************************************************************************************/
+ $languageStrings = array(
++	'Project Task' => 'Project Task',
+ 	'LBL_ADD_RECORD' => 'Add Project Task',
+ 	'LBL_PROJECTS_LIST' => 'Projects List',
+ 	'LBL_PROJECT_TASK_INFORMATION' => 'Project Task Details',
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/RecycleBin.php
+--- a/languages/en_us/RecycleBin.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/RecycleBin.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -10,6 +10,7 @@
+ 
+ $languageStrings  = Array(
+ 	'RecycleBin' => 'Recycle Bin',
++	'Recycle Bin' => 'Recycle Bin',
+ 	'LBL_SELECT_MODULE' => 'Select Module',
+ 	'LBL_EMPTY_RECYCLEBIN' => 'Empty Recycle Bin',
+ 	'LBL_RESTORE' => 'Restore',
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/SMSNotifier.php
+--- a/languages/en_us/SMSNotifier.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/SMSNotifier.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -8,6 +8,7 @@
+  * All Rights Reserved.
+  *************************************************************************************/
+ $languageStrings = array(
++	'SMSNotifier' => 'SMS Notifier',
+ 	// Basic Strings
+ 	'LBL_SEND_SMS_TO_SELECTED_NUMBERS' => 'Send SMS to the selected numbers',
+ 	'LBL_STEP_1' => 'Step 1',
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/SPPDFTemplates.php
+--- a/languages/en_us/SPPDFTemplates.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/SPPDFTemplates.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -12,6 +12,7 @@
+ $languageStrings = Array (
+ 'MyExtension' => 'My Extension',
+ "LBL_MODULE_NAME"=>"PDF Templates",
++"PDF Templates"=>"PDF Templates",
+ "LBL_TEMPLATE_GENERATOR"=>"PDF Templates",
+ "LBL_TEMPLATE_GENERATOR_DESCRIPTION"=>"PDF templates editor.",
+ "LBL_DELETE"=>"Delete",
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/SPSocialConnector.php
+--- a/languages/en_us/SPSocialConnector.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/SPSocialConnector.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -11,6 +11,7 @@
+  * If you have any questions or comments, please email: devel@salesplatform.ru
+  ************************************************************************************/
+ $languageStrings = array(
++    'SPSocialConnector' =>  'Social Connector',
+ 	'LBL_SPSOCIALCONNECTOR_SETTINGS' => 'Social Connector',
+     'LBL_SPSOCIALCONNECTOR_CONFIG'   => 'Configuration',
+     'LBL_NOTE'  =>  'Note: ',
+@@ -22,6 +23,8 @@
+     'tw_app_secret'   => 'Twitter: App secret',
+     'fb_app_id'   => 'Facebook: App ID',
+     'fb_app_secret'   => 'Facebook: App secret',
++    'message'  =>  'Message',
++    'Date Time'  =>  'Date Time',
+ );
+ 
+ $jsLanguageStrings = array(
+diff -r 3b96a8386060 -r e6c03eaed449 languages/en_us/Vtiger.php
+--- a/languages/en_us/Vtiger.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/en_us/Vtiger.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -369,6 +369,7 @@
+ 	'LBL_NO_PENDING_ACTIVITIES' => 'No pending activities',
+ 	'LBL_NO_RECENT_UPDATES' => 'No recent updates',
+ 	'LBL_NO_RECORDS' => 'No Records',
++	'LBL_NOT_FOUND' => 'No records found:',
+ 	'LBL_NO_RECORDS_FOUND' => 'No records found',
+ 	'LBL_NO_RECORD_SELECTED' => 'No record selected.',
+ 	'LBL_NO_RELATED' => 'No Related',
+@@ -661,6 +662,8 @@
+     'LBL_ERROR' => 'Error',
+     'LBL_BE_CAREFUL_WITH_EMAIL_TEMPLATES' => 'Be careful with email templates. Field search will be done by every record',
+     'Global Search' => 'Глобальный поиск',
++    'Created By' => 'Created By',
++    'Last SMS Date' => 'Last SMS Date',
+     //SalesPlatform.ru end
+ );
+ 
+diff -r 3b96a8386060 -r e6c03eaed449 languages/ru_ru/Faq.php
+--- a/languages/ru_ru/Faq.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/ru_ru/Faq.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -8,16 +8,16 @@
+  * All Rights Reserved.
+  ************************************************************************************/
+ $languageStrings = array(
+-	'Faq'                          => 'ЧаВо'                    , 
+-	'SINGLE_Faq'                   => 'ЧаВо'                    , 
+-	'LBL_RECORDS_LIST'             => 'Список ЧаВо'                   , // TODO: Review
+-	'LBL_ADD_RECORD'               => 'Добавить ЧаВо'                     , // TODO: Review
+-	'LBL_FAQ_INFORMATION'          => 'Информация ЧаВо', 
++	'Faq'                          => 'База знаний'                    , 
++	'SINGLE_Faq'                   => 'Элемент БЗ'                    , 
++	'LBL_RECORDS_LIST'             => 'Список элементов БЗ'                   , // TODO: Review
++	'LBL_ADD_RECORD'               => 'Добавить элемент БЗ'                     , // TODO: Review
++	'LBL_FAQ_INFORMATION'          => 'Информация БЗ', 
+ 	'LBL_COMMENT_INFORMATION'      => 'Комментарий'      , 
+ 	'Question'                     => 'Вопрос'                , 
+ 	'Answer'                       => 'Ответ'                  , 
+ 	'Comments'                     => 'Комментарии'      , 
+-	'Faq No'                       => 'ЧаВо №'                , 
++	'Faq No'                       => 'База знаний №'                , 
+ 	'General'                      => 'Общее'                  , 
+ 	'Draft'                        => 'Черновик'            , 
+ 	'Published'                    => 'Опубликовано'    , 
+diff -r 3b96a8386060 -r e6c03eaed449 languages/ru_ru/HelpDesk.php
+--- a/languages/ru_ru/HelpDesk.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/ru_ru/HelpDesk.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -37,7 +37,7 @@
+ 	'Closed'                       => 'Закрыто'              , 
+ 	'LBL_STATUS'                   => 'Статус'                , 
+ 	'LBL_SEVERITY'                 => 'Важность'            , // KEY 5.x: Severity
+-	'LBL_CONVERT_FAQ'              => 'Преобразовать в ЧаВо'              , 
++	'LBL_CONVERT_FAQ'              => 'Преобразовать в базу знаний'              , 
+ 	'LBL_RELATED_TO'               => 'Связан с'             ,
+     'LBL_SETUP_WEBFORMS'           => 'Установка Веб-Форм',
+     'LBL_EXPORT_TO_PDF'            => 'Экспорт в PDF:', 
+diff -r 3b96a8386060 -r e6c03eaed449 languages/ru_ru/Home.php
+--- a/languages/ru_ru/Home.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/ru_ru/Home.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -18,7 +18,7 @@
+ 	'ILTI'                         => 'Последние Счета', // KEY 5.x: Top Invoices
+ 	'HDB'                          => 'Панель Главной Страницы', // KEY 5.x: Home Page Dashboard
+     'OLTPO'                        => 'Последние Закупки', // KEY 5.x: Top Purchase Orders
+-	'LTFAQ'                        => 'Мои Частые ЧаВо', // KEY 5.x: My Recent FAQs
++	'LTFAQ'                        => 'Последние элементы БЗ', // KEY 5.x: My Recent FAQs
+ 	'UA'                           => 'Ближайшие События', // KEY 5.x: LBL_UPCOMING_EVENTS
+ 	'PA'                           => 'События в процессе', // KEY 5.x: LBL_PENDING_EVENTS
+     'Home'                         => 'Главная',
+diff -r 3b96a8386060 -r e6c03eaed449 languages/ru_ru/Settings/ExtensionStore.php
+--- a/languages/ru_ru/Settings/ExtensionStore.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/ru_ru/Settings/ExtensionStore.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -34,7 +34,7 @@
+ 	'LBL_MODULE_NAME' => 'Имя модуля',
+ 	'LBL_REQ_VTIGER_VERSION' => 'Версия Vtiger',
+ 	'LBL_LICENSE_ACCEPT_AGREEMENT' => 'I accept the license agreement.',
+-	'LBL_EXISTS'=>'Exists',
++	'LBL_EXISTS' => 'Exists',
+ 	'LBL_PROCEED_WITH_IMPORT' => 'Do you want to proceed with the import?',
+ 	'LBL_VERSION_NOT_SUPPORTED' => 'Module version is not compatible with vtiger version',
+ 	'LBL_FINISH' => 'Finish',
+@@ -44,8 +44,8 @@
+ 	'LBL_INVALID_IMPORT_TRY_AGAIN' => ' provided for module import! Try Again.',
+ 	'LBL_IMPORTED_MODULE' => ' module was imported successfully.',
+ 	
+-	'LBL_UPDATED_MODULE' => ' module was updated successfully.',
+-	'LBL_UPDATING_MODULE' => 'Updating Module',
++	'LBL_UPDATED_MODULE' => ' модуль обновлен успешно.',
++	'LBL_UPDATING_MODULE' => 'Обновление модуля',
+     
+     //Extension Store translations
+     'LBL_VTIGER_EXTENSION_STORE' => 'Магазин расширений Vtiger',
+@@ -55,17 +55,17 @@
+     'LBL_REGISTER_TO_MARKET_PLACE' => 'Регистрация в Marketplace',
+     'LBL_MARKETPLACE_REGISTRATION' => 'Регистрация в Marketplace',
+     'LBL_CREATE_AN_ACCOUNT' => 'Создать новый аккаунт',
+-    'LBL_SETUP_CARD_DETAILS' => 'Setup Card Details',
+-    'LBL_SETUP_CARD' => 'Setup Card',
+-    'LBL_CARD_NUMBER' => 'Card Number',
++    'LBL_SETUP_CARD_DETAILS' => 'Данные карты',
++    'LBL_SETUP_CARD' => 'Данные карты',
++    'LBL_CARD_NUMBER' => 'Номер карты',
+     'LBL_EXP_MONTH' => 'Exp Month',
+     'LBL_EXP_YEAR' => 'Exp Year',
+     'LBL_CVC_CODE' => 'CVC 3 digit code',
+-    'LBL_RESET' => 'Reset',
++    'LBL_RESET' => 'Сброс',
+     'LBL_EXTENSION_STORE' => 'Магазин расширений',
+     'LBL_INSTALLED' => 'Установлен',
+-    'LBL_UPDATE_CARD_DETAILS' => 'Update Card Details',
+-    'LBL_BY' => 'by',
++    'LBL_UPDATE_CARD_DETAILS' => 'Обновить данные карты',
++    'LBL_BY' => 'от',   
+     'LBL_RATINGS' => 'Ratings',
+     'LBL_DESCRIPTION' => 'Описание',
+     'LBL_AUTHOR_INFORMATION' => 'Author Information',
+@@ -80,8 +80,8 @@
+     'LBL_REVIEW' => 'Review',
+     'LBL_CUSTOMERS_REVIEWED' => 'Customers Reviewed',
+     'LBL_SINGLE_CUSTOMER_REVIEWED' => 'Single Customer Reviewed',
+-    'LBL_INSTALLATION_FAILED' => 'Installation Failed',
+-    'LBL_SUCCESSFULL_INSTALLATION' => 'Successful Installation',
++    'LBL_INSTALLATION_FAILED' => 'Ошибка при установке',
++    'LBL_SUCCESSFULL_INSTALLATION' => 'Успешная установка',
+     'LBL_INSTALL_FROM_ZIP' => 'Установить из zip',
+     'LBL_MORE_DETAILS' => 'Подробнее',
+     'Install' => 'Установить',
+@@ -112,7 +112,9 @@
+     'LBL_MORE_DETAILS_ON_INSTALLATION' => 'For more details on installation ',
+     'LBL_READ_HERE' => 'read here',
+     'LBL_REVIEWS' => 'отзывов',
+-
++    'LBL_EXPIRY_DATE'  => 'Срок действия',
++    'LBL_LOGOUT'  => 'Выйти',
++    
+     'firstname' => 'Имя',
+     'lastname' => 'Фамилия',
+     'email' => 'E-mail',
+@@ -120,9 +122,14 @@
+     'Phone' => 'Телефон',
+     'Website' => 'Веб-сайт',
+     'Launch' => 'Запуск',
++    'LBL_WARNING' => 'Предупреждение',
++    'LBL_SECURITY_CODE' => 'Код безопасности (CVV/CVC)',
++    'LBL_WHAT_IS_SECURITY_CODE' => 'Что такое "код безопасности"?',
++    'LBL_CARD_NUMBER_PLACEHOLDER' => 'Шестнадцатизначный номер',
++    'LBL_SECURITY_CODE_HELP_CONTENT' => 'CVV номер (Card Verification Value) трехзначный номер на вашей кредитной/дебетовой карте VISA®, MasterCard® и т.д...',
+ );
+ $jsLanguageStrings = array(
+-  'JS_PLEASE_SETUP_CARD_DETAILS_TO_INSTALL_THIS_EXTENSION'  => 'Please setup card details to install this extension',
++    'JS_PLEASE_SETUP_CARD_DETAILS_TO_INSTALL_THIS_EXTENSION'  => 'Пожалуйста, заполните данные карты для установки этого расширения',
+   'JS_UPDATE_CARD_DETAILS' => 'Update Card Details',
+   'JS_ON' => 'on',
+   'JS_RATINGS' => 'Ratings',
+diff -r 3b96a8386060 -r e6c03eaed449 languages/ru_ru/Users.php
+--- a/languages/ru_ru/Users.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/ru_ru/Users.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -236,6 +236,9 @@
+     'LBL_CHANGE_ACCESS_KEY' => 'Изменить ключ доступа',
+     'LBL_ACCESS_KEY_UPDATED_SUCCESSFULLY' => 'Ключ доступа изменен',
+ 	// SalesPlatform.ru end
++        //SalesPlatform.ru begin
++        'LBL_DUPLICATE_USER' => 'Такой пользователь уже существует',
++        //SalesPlatform.ru end
+ );
+ 
+ $jsLanguageStrings = array(
+diff -r 3b96a8386060 -r e6c03eaed449 languages/ru_ru/Vtiger.php
+--- a/languages/ru_ru/Vtiger.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/languages/ru_ru/Vtiger.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -728,6 +728,7 @@
+     '1 Day'=>'1 день',
+     'yes' => 'Да',
+     'no' => 'Нет',
++    'LBL_EQ_ZERO' => 'Нет',
+     'Transfer records to user' => 'Прикрепить все записи к пользователю',
+     'User to be deleted' => 'Удаляемый пользователь',
+     'Roles' => 'Роли',
+@@ -747,7 +748,7 @@
+     'Scheduler'     => 'Планировщик',
+     'CronTasks'     => 'Планировщик',
+     'CustomerPortal'  => 'Клиентский портал',  
+-    'Faq' => 'Чаво',
++    'Faq' => 'База знаний',
+     'Events' => 'События',
+     'SPSocialConnector' => 'Сообщения',
+     'System Timezone' => 'Системная временная зона',
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/HelpDesk/SummaryViewWidgets.tpl
+--- a/layouts/vlayout/modules/HelpDesk/SummaryViewWidgets.tpl	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/HelpDesk/SummaryViewWidgets.tpl	Tue Dec 20 18:49:47 2016 +0300
+@@ -52,8 +52,11 @@
+ 		{/if}
+ 		{* Summary View Comments Widget Ends Here*}
+ 	</div>
+-
+-	<div class='span5' style="overflow: hidden">
++    
++    {* SalesPlatform.ru begin *}
++    <div class='span5'>
++	{* <div class='span5' style="overflow: hidden"> *}
++    {* SalesPlatform.ru end *}
+ 		{* Summary View Related Activities Widget*}
+ 			<div id="relatedActivities">
+ 				{$RELATED_ACTIVITIES}
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/Import/Import_Finish_Buttons.tpl
+--- a/layouts/vlayout/modules/Import/Import_Finish_Buttons.tpl	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/Import/Import_Finish_Buttons.tpl	Tue Dec 20 18:49:47 2016 +0300
+@@ -19,7 +19,12 @@
+ {if $MERGE_ENABLED eq '0'}
+ <button name="next" class="delete btn"
+ 		onclick="location.href='index.php?module={$FOR_MODULE}&view=Import&mode=undoImport&foruser={$OWNER_ID}'"><strong>{'LBL_UNDO_LAST_IMPORT'|@vtranslate:$MODULE}</strong></button>
+-&nbsp;&nbsp;
++
++{* SalesPlatform.ru begin *}       
++<br><br>
++{*&nbsp;&nbsp;*}
++{* SalesPlatform.ru end *}
++        
+ {/if}
+ <button name="cancel" class="edit btn btn-success"
+ 		onclick="location.href='index.php?module={$FOR_MODULE}&view=List'"><strong>{'LBL_FINISH_BUTTON_LABEL'|@vtranslate:$MODULE}</strong></button>
+\ No newline at end of file
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/Potentials/SummaryViewWidgets.tpl
+--- a/layouts/vlayout/modules/Potentials/SummaryViewWidgets.tpl	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/Potentials/SummaryViewWidgets.tpl	Tue Dec 20 18:49:47 2016 +0300
+@@ -80,7 +80,10 @@
+ 		{/if}
+ 		{* Summary View Products Widget Ends Here*}
+ 	</div>
+-	<div class='span5' style="overflow: hidden">
++	{* SalesPlatform.ru begin *}
++    <div class='span5'>
++	{* <div class='span5' style="overflow: hidden"> *}
++    {* SalesPlatform.ru end *}
+ 		{* Summary View Related Activities Widget *}
+ 			<div id="relatedActivities">
+ 				{$RELATED_ACTIVITIES}
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/Potentials/dashboards/TopPotentialsContents.tpl
+--- a/layouts/vlayout/modules/Potentials/dashboards/TopPotentialsContents.tpl	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/Potentials/dashboards/TopPotentialsContents.tpl	Tue Dec 20 18:49:47 2016 +0300
+@@ -33,8 +33,9 @@
+                  {/if}
+                 </div>
+                  {/foreach}
+-                         
+-			</div>
++            {*SalesPlatform begin*}                     
++			{*</div>*}
++            {*SalesPlatform end*}
+ 		</div>
+ 		{/foreach}
+ 	</div>
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/Project/SummaryViewWidgets.tpl
+--- a/layouts/vlayout/modules/Project/SummaryViewWidgets.tpl	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/Project/SummaryViewWidgets.tpl	Tue Dec 20 18:49:47 2016 +0300
+@@ -97,7 +97,10 @@
+ 		{/if}
+ 		{* Summary View HelpDesk Widget Ends here *}
+ 	</div>
+-	<div class='span5' style="overflow: hidden">
++	{* SalesPlatform.ru begin *}
++    <div class='span5'>
++    {* <div class='span5' style="overflow: hidden"> *}
++    {* SalesPlatform.ru end *}
+ 
+ 		{* Summary View MileStone Widget*}
+ 		{if $MILESTONE_WIDGET_MODEL}
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/Settings/LayoutEditor/Index.tpl
+--- a/layouts/vlayout/modules/Settings/LayoutEditor/Index.tpl	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/Settings/LayoutEditor/Index.tpl	Tue Dec 20 18:49:47 2016 +0300
+@@ -96,8 +96,12 @@
+                                         </div>
+                                     </div>
+                                 </div>
+-                                <div class="blockFieldsList blockFieldsSortable row-fluid" style="padding:5px;min-height: 27px">
++                               {*SalesPlatform.ru begin Move buttons*}
++                                <div class="blockFieldsList {if $SELECTED_MODULE_MODEL->isFieldsSortableAllowed($BLOCK_LABEL_KEY)}blockFieldsSortable {/if} row-fluid" style="padding:5px;min-height: 27px">
++                                    <ul name="sortable1" class="connectedSortable span6" style="list-style-type: none; float: left;min-height: 1px;padding:2px;">        
++                              {*<div class="blockFieldsList blockFieldsSortable row-fluid" style="padding:5px;min-height: 27px">
+                                     <ul name=" {if $SELECTED_MODULE_MODEL->isFieldsSortableAllowed($BLOCK_LABEL_KEY)}sortable1{/if}" class="connectedSortable span6" style="list-style-type: none; float: left;min-height: 1px;padding:2px;">
++                               *}{*SalesPlatform.ru end*}
+                                         {foreach item=FIELD_MODEL from=$FIELDS_LIST name=fieldlist}
+                                             {assign var=FIELD_INFO value=$FIELD_MODEL->getFieldInfo()}
+                                             {if $smarty.foreach.fieldlist.index % 2 eq 0}
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/Users/resources/Edit.js
+--- a/layouts/vlayout/modules/Users/resources/Edit.js	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/Users/resources/Edit.js	Tue Dec 20 18:49:47 2016 +0300
+@@ -81,7 +81,7 @@
+ 				if(newPassword != confirmPassword){
+ 					Vtiger_Helper_Js.showPnotify(app.vtranslate('JS_REENTER_PASSWORDS'));
+ 					e.preventDefault();
+-				}
++				}     
+ 				if(!(userName in thisInstance.duplicateCheckCache)) {
+ 					thisInstance.checkDuplicateUser(userName).then(
+ 						function(data){
+@@ -115,7 +115,11 @@
+ 				'module': app.getModuleName(),
+ 				'action' : "SaveAjax",
+ 				'mode' : 'userExists',
+-				'user_name' : userName
++                                //SalesPlatform.ru begin Fix duplicate user creation
++				'user_name' : userName,
++                                recordId : jQuery('input[name="record"]').val()
++                                //'user_name' : userName
++                                //SalesPlatform.ru end 
+ 			}
+ 			AppConnector.request(params).then(
+ 				function(data) {
+@@ -129,6 +133,40 @@
+ 		return aDeferred.promise();
+ 	},
+ 	
++    //SalesPlatform.ru begin Fix duplicate user creation
++    registerSubmitEvent: function() {
++                var editViewForm = this.getForm();
++
++                editViewForm.submit(function(e){
++                        //Form should submit only once for multiple clicks also
++                        if(typeof editViewForm.data('submit') != "undefined") {
++                                return false;
++                        } else {
++                                var module = jQuery(e.currentTarget).find('[name="module"]').val();
++                                if(editViewForm.validationEngine('validate')) {
++                                        //Once the form is submiting add data attribute to that form element
++                                        editViewForm.data('submit', 'true');
++                    
++                    
++                    //on submit form trigger the recordPreSave event
++                    var recordPreSaveEvent = jQuery.Event(Vtiger_Edit_Js.recordPreSave);
++                    editViewForm.trigger(recordPreSaveEvent, {'value' : 'edit'});
++                                        if(recordPreSaveEvent.isDefaultPrevented()) {
++                                                //If duplicate record validation fails, form should submit again
++                                                editViewForm.removeData('submit');
++                                                e.preventDefault();
++                                        }
++                                } else {
++                                        //If validation fails, form should submit again
++                                        editViewForm.removeData('submit');
++                                        // to avoid hiding of error message under the fixed nav bar
++                                        app.formAlignmentAfterValidation(editViewForm);
++                                }
++                        }
++                });
++        },
++    //SalesPlatform.ru end
++               
+ 	registerEvents : function() {
+         this._super();
+ 		var form = this.getForm();
+diff -r 3b96a8386060 -r e6c03eaed449 layouts/vlayout/modules/Vtiger/SummaryViewWidgets.tpl
+--- a/layouts/vlayout/modules/Vtiger/SummaryViewWidgets.tpl	Fri Nov 18 11:45:08 2016 +0400
++++ b/layouts/vlayout/modules/Vtiger/SummaryViewWidgets.tpl	Tue Dec 20 18:49:47 2016 +0300
+@@ -31,7 +31,10 @@
+ 				{/if}
+ 			{/foreach}
+ 		</div>
+-		<div class="span5" style="overflow: hidden">
++		{* SalesPlatform.ru begin *}
++        <div class='span5'>
++        {* <div class='span5' style="overflow: hidden"> *}
++        {* SalesPlatform.ru end *}
+ 			<div id="relatedActivities">
+ 				{$RELATED_ACTIVITIES}
+ 			</div>
+diff -r 3b96a8386060 -r e6c03eaed449 libraries/csrf-magic/csrf-magic.php
+--- a/libraries/csrf-magic/csrf-magic.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/libraries/csrf-magic/csrf-magic.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -391,7 +391,10 @@
+         include $file;
+         return $secret;
+     }
+-    if (is_writable($dir)) {
++    // SalesPlatform.ru begin Fix dir checking
++    if (is_writable(dirname($file))) {
++    //if (is_writable($dir)) {
++    // SalesPlatform.ru end
+         $secret = csrf_generate_secret();
+         $fh = fopen($file, 'w');
+         fwrite($fh, '<?php $secret = "'.$secret.'";' . PHP_EOL);
+diff -r 3b96a8386060 -r e6c03eaed449 modules/CustomView/PopulateCustomView.php
+--- a/modules/CustomView/PopulateCustomView.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/CustomView/PopulateCustomView.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -130,11 +130,11 @@
+                           'setdefault'=>'1','setmetrics'=>'0','status'=>'0','userid'=>'1',
+ 			  'cvmodule'=>'Webmails','stdfilterid'=>'','advfilterid'=>''),
+ 
+-		    Array('viewname'=>'Черновики ЧаВо',
++		    Array('viewname'=>'Черновики БЗ',
+                           'setdefault'=>'0','setmetrics'=>'0','status'=>'3','userid'=>'1',
+                           'cvmodule'=>'Faq','stdfilterid'=>'','advfilterid'=>'8'),
+ 
+-		    Array('viewname'=>'Опубликованные ЧаВо',
++		    Array('viewname'=>'Опубликованные БЗ',
+                           'setdefault'=>'0','setmetrics'=>'0','status'=>'3','userid'=>'1',
+ 			  'cvmodule'=>'Faq','stdfilterid'=>'','advfilterid'=>'9'),
+ 
+diff -r 3b96a8386060 -r e6c03eaed449 modules/CustomView/actions/Approve.php
+--- a/modules/CustomView/actions/Approve.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/CustomView/actions/Approve.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -22,7 +22,10 @@
+ 		header("Location: $listViewUrl");
+ 	}
+         
+-         public function validateRequest(Vtiger_Request $request) { 
+-            $request->validateWriteAccess(); 
++         public function validateRequest(Vtiger_Request $request) {
++             // SalesPlatform.ru begin
++             $request->validateWriteAccess(true);
++             //$request->validateWriteAccess();
++             // SalesPlatform.ru end
+         } 
+ }
+diff -r 3b96a8386060 -r e6c03eaed449 modules/CustomView/actions/Deny.php
+--- a/modules/CustomView/actions/Deny.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/CustomView/actions/Deny.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -22,7 +22,10 @@
+ 		header("Location: $listViewUrl");
+ 	}
+         
+-        public function validateRequest(Vtiger_Request $request) { 
+-            $request->validateWriteAccess(); 
++        public function validateRequest(Vtiger_Request $request) {
++            // SalesPlatform.ru begin
++            $request->validateWriteAccess(true);
++            //$request->validateWriteAccess();
++            // SalesPlatform.ru end
+         } 
+ }
+diff -r 3b96a8386060 -r e6c03eaed449 modules/Install/models/Utils.php
+--- a/modules/Install/models/Utils.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/Install/models/Utils.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -33,6 +33,7 @@
+ 		'Contact Image Directory' => './test/contact/',
+ 		'Logo Directory' => './test/logo/',
+ 		'Logs Directory' => './logs/',
++		'Vtiger Root Directory' => './',
+ 	);
+ 
+ 	/**
+diff -r 3b96a8386060 -r e6c03eaed449 modules/Invoice/InvoiceHandler.php
+--- a/modules/Invoice/InvoiceHandler.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/Invoice/InvoiceHandler.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -48,7 +48,7 @@
+             $wsrecord['balance'] = floatval($wsrecord['hdnGrandTotal'] - $wsrecord['received']);
+             if ($wsrecord['balance'] == 0) {
+                 $wsrecord['invoicestatus'] = 'Paid';
+-            //SalesPlatform.ru begin #3960
++            //SalesPlatform.ru begin
+                 $query = "UPDATE vtiger_invoice SET balance=?,received=?,invoicestatus=? WHERE invoiceid=?";
+                 $db->pquery($query, array($wsrecord['balance'], $wsrecord['received'], $wsrecord['invoicestatus'], $entityData->getId()));
+             } else{
+diff -r 3b96a8386060 -r e6c03eaed449 modules/Migration/schema/650-201611_to_650-201701.php
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/modules/Migration/schema/650-201611_to_650-201701.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -0,0 +1,39 @@
++<?php
++/*+**********************************************************************************
++ * The contents of this file are subject to the vtiger CRM Public License Version 1.1
++ * ("License"); You may not use this file except in compliance with the License
++ * The Original Code is: SalesPlatform Ltd
++ * The Initial Developer of the Original Code is SalesPlatform Ltd.
++ * All Rights Reserved.
++ * If you have any questions or comments, please email: devel@salesplatform.ru
++ ************************************************************************************/
++
++chdir(dirname(__FILE__) . '/../../../');
++include_once 'modules/com_vtiger_workflow/VTTaskManager.inc';
++include_once 'include/utils/utils.php';
++
++vimport('~~modules/com_vtiger_workflow/include.inc');
++vimport('~~modules/com_vtiger_workflow/tasks/VTEntityMethodTask.inc');
++vimport('~~modules/com_vtiger_workflow/VTEntityMethodManager.inc');
++vimport('~~include/Webservices/Utils.php');
++vimport('~~modules/Users/Users.php');
++
++global $adb;
++
++//Vtiger migration begin
++//Vtiger migration end
++
++
++//SalesPlatform.ru migration begin
++if (defined('VTIGER_UPGRADE')) {
++    
++    Migration_Index_View::ExecuteQuery("UPDATE `vtiger_customview` SET `viewname`='Черновики БЗ' WHERE `viewname`='Черновики ЧаВо'", array());
++    Migration_Index_View::ExecuteQuery("UPDATE `vtiger_customview` SET `viewname`='Опубликованные БЗ' WHERE `viewname`='Опубликованные ЧаВо'", array());
++    Migration_Index_View::ExecuteQuery("UPDATE `vtiger_modentity_num` SET `prefix`='БЗ_' WHERE `prefix`='ЧаВо_'", array());
++
++    $result = $adb->pquery("SELECT faq_no FROM vtiger_faq ", array());
++    Migration_Index_View::ExecuteQuery("UPDATE `vtiger_faq` SET `faq_no`=CONCAT('БЗ_',?)", array(strrchr($result,"_")));
++    
++    }
++//SalesPlatform.ru migration end
++
+diff -r 3b96a8386060 -r e6c03eaed449 modules/SMSNotifier/models/Record.php
+--- a/modules/SMSNotifier/models/Record.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/SMSNotifier/models/Record.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -23,7 +23,10 @@
+ 		$data = array_merge($statusDetails[0], array('statuscolor' => $statusColor));
+ 		$this->setData($data);
+ 
+-		return $this;
++        // SalesPlatform.ru begin
++        return $statusDetails;
++		//return $this;
++        // SalesPlatform.ru end
+ 	}
+ 
+ 	public function getCheckStatusUrl() {
+diff -r 3b96a8386060 -r e6c03eaed449 modules/Settings/Vtiger/actions/CompanyDetailsSave.php
+--- a/modules/Settings/Vtiger/actions/CompanyDetailsSave.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/Settings/Vtiger/actions/CompanyDetailsSave.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -45,11 +45,9 @@
+ 						$fieldValue = $moduleModel->get($fieldName);
+ 					}
+ 				}
+-				// SalesPlatform.ru begin
+                 if ($fieldName === 'company') {
+                     $fieldValue = htmlspecialchars($request->get('company'), ENT_QUOTES);
+                 }
+-				// SalesPlatform.ru end
+ 				$moduleModel->set($fieldName, $fieldValue);
+ 			}
+ 			$moduleModel->save();
+diff -r 3b96a8386060 -r e6c03eaed449 modules/Users/Users.php
+--- a/modules/Users/Users.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/Users/Users.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -1802,7 +1802,7 @@
+ 					'HelpDesk' => 'Заявки',
+ 					'ServiceContracts' => 'Сервисные контракты',
+ 					'CustomerPortal' => 'Клиентский портал',
+-                                        'Faq' => 'ЧаВо',
++                                        'Faq' => 'База знаний',
+ 				)),
+ 			'Inventory' => array(
+ 				'label' => 'Счета и управление складом',
+diff -r 3b96a8386060 -r e6c03eaed449 modules/Users/actions/SaveAjax.php
+--- a/modules/Users/actions/SaveAjax.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/Users/actions/SaveAjax.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -94,12 +94,24 @@
+ 		
+ 	public function userExists(Vtiger_Request $request){
+ 		$module = $request->getModule();
+-		$userName = $request->get('user_name');
+-		$userModuleModel = Users_Module_Model::getCleanInstance($module);
+-		$status = $userModuleModel->checkDuplicateUser($userName);
+-		$response = new Vtiger_Response();
+-		$response->setResult($status);
+-		$response->emit();
++                //SalesPlatform.ru begin Fix duplicate user creation
++
++                $recordId = $request->get('recordId');
++                $userModel = Users_Record_Model::getCleanInstance($module);
++                if($recordId != null) {
++                    $userModel = Users_Record_Model::getInstanceById($recordId, 'Users');
++                }
++                $userModel->set('user_name', trim($request->get('user_name')));
++                $response = new Vtiger_Response();
++                $response->setResult($userModel->isDuplicates());
++                $response->emit();
++                //$userName = $request->get('user_name');
++                //$userModuleModel = Users_Module_Model::getCleanInstance($module);
++                //$status = $userModuleModel->checkDuplicateUser($userName);
++                //$response = new Vtiger_Response();
++                //$response->setResult($status);
++                //$response->emit();
++                //SalesPlatform.ru end 
+ 	}
+ 	
+ 	public function savePassword(Vtiger_Request $request) {
+diff -r 3b96a8386060 -r e6c03eaed449 modules/Users/models/Record.php
+--- a/modules/Users/models/Record.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/modules/Users/models/Record.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -120,12 +120,38 @@
+ 	 * Function to save the current Record Model
+ 	 */
+ 	public function save() {
++        //SalesPlatform.ru begin Fix duplicate user creation
++        if($this->isDuplicates()) {
++            throw new Exception(vtranslate('LBL_DUPLICATE_USER', $this->getModuleName()));
++        }
++        //SalesPlatform.ru end       
+ 		parent::save();
+ 
+ 		$this->saveTagCloud();
+ 	}
+ 
++        //SalesPlatform.ru begin Fix duplicate user creation
++        public function isDuplicates() {
++            $sql = "SELECT count(id) as duplicates_count FROM vtiger_users WHERE user_name=?";
++            $params = array($this->get('user_name'));
++            if($this->getId() != null) {
++                $sql .= " AND id!=?";
++                $params[] = $this->getId();
++            }
+ 
++            $db = PearDatabase::getInstance();
++            $result = $db->pquery($sql, $params);
++            
++            $isDuplicates = false;
++            if($result) {
++                $resultRow = $db->fetchByAssoc($result);
++                $isDuplicates = ($resultRow['duplicates_count'] > 0);
++            }
++            
++            return $isDuplicates;
++        }
++        //SalesPlatform.ru end
++        
+ 	/**
+ 	 * Function to get all the Home Page components list
+ 	 * @return <Array> List of the Home Page components
+diff -r 3b96a8386060 -r e6c03eaed449 pkg/vtiger/translations/Russian/modules/Faq.php
+--- a/pkg/vtiger/translations/Russian/modules/Faq.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/pkg/vtiger/translations/Russian/modules/Faq.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -8,19 +8,19 @@
+  * All Rights Reserved.
+  ************************************************************************************/
+ $languageStrings = array(
+-	'Faq'                          => 'ЧаВо'                    , 
+-	'SINGLE_Faq'                   => 'ЧаВо'                    , 
+-	'LBL_RECORDS_LIST'             => 'Список Вопросы и ответы'                   , 
+-	'LBL_ADD_RECORD'               => 'Добавить FAQ'                     , 
+-	'LBL_FAQ_INFORMATION'          => 'Информация ЧаВо', 
++	'Faq'                          => 'База знаний'                    , 
++	'SINGLE_Faq'                   => 'Элемент БЗ'                    , 
++	'LBL_RECORDS_LIST'             => 'Список элементов БЗ'                   , // TODO: Review
++	'LBL_ADD_RECORD'               => 'Добавить элемент БЗ'                     , // TODO: Review
++	'LBL_FAQ_INFORMATION'          => 'Информация БЗ', 
+ 	'LBL_COMMENT_INFORMATION'      => 'Комментарий'      , 
+ 	'Question'                     => 'Вопрос'                , 
+ 	'Answer'                       => 'Ответ'                  , 
+ 	'Comments'                     => 'Комментарии'      , 
+-	'Faq No'                       => 'ЧаВо №'                , 
++	'Faq No'                       => 'База знаний №'                , 
+ 	'General'                      => 'Общее'                  , 
+ 	'Draft'                        => 'Черновик'            , 
+ 	'Published'                    => 'Опубликовано'    , 
+ 	'Obsolete'                     => 'Устарело'            , 
+ 	'LBL_SOLUTION'                 => 'РЕШЕНИЕ'              , 
+-);
+\ No newline at end of file
++);
+diff -r 3b96a8386060 -r e6c03eaed449 pkg/vtiger/translations/Russian/modules/HelpDesk.php
+--- a/pkg/vtiger/translations/Russian/modules/HelpDesk.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/pkg/vtiger/translations/Russian/modules/HelpDesk.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -37,7 +37,7 @@
+ 	'Closed'                       => 'Закрыто'              , 
+ 	'LBL_STATUS'                   => 'Статус'                , 
+ 	'LBL_SEVERITY'                 => 'Важность'            , // KEY 5.x: Severity
+-	'LBL_CONVERT_FAQ'              => 'Преобразовать в ЧаВо'              , 
++	'LBL_CONVERT_FAQ'              => 'Преобразовать в базу знаний'      , 
+ 	'LBL_RELATED_TO'               => 'Связан с'             ,
+ 
+ 	//added to support i18n in ticket mails
+diff -r 3b96a8386060 -r e6c03eaed449 pkg/vtiger/translations/Russian/modules/Home.php
+--- a/pkg/vtiger/translations/Russian/modules/Home.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/pkg/vtiger/translations/Russian/modules/Home.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -18,7 +18,7 @@
+ 	'ILTI'                         => 'Последние Счета', // KEY 5.x: Top Invoices
+ 	'HDB'                          => 'Панель Главной Страницы', // KEY 5.x: Home Page Dashboard
+ 	'OLTPO'                        => 'Последние Заказы на Закупку', // KEY 5.x: Top Purchase Orders
+-	'LTFAQ'                        => 'Мои Частые ЧаВо', // KEY 5.x: My Recent FAQs
++	'LTFAQ'                        => 'Последние элементы БЗ', // KEY 5.x: My Recent FAQs
+ 	'UA'                           => 'Ближайшие События', // KEY 5.x: LBL_UPCOMING_EVENTS
+ 	'PA'                           => 'События в процессе', // KEY 5.x: LBL_PENDING_EVENTS
+         'Home'                         => 'Главная',
+diff -r 3b96a8386060 -r e6c03eaed449 soap/customerportal.php
+--- a/soap/customerportal.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/soap/customerportal.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -1163,7 +1163,11 @@
+ 	$isactive = $adb->query_result($res,0,'isactive');
+ 
+ 	// We no longer have the original password!
+-	if (!empty($adb->query_result($res, 0, 'cryptmode'))) {
++	// SalesPlatform.ru begin Fix empty(): Can't use method return value in write context
++	$spcryptmode = $adb->query_result($res, 0, 'cryptmode');
++	if (!empty($spcryptmode)) {
++	//if (!empty($adb->query_result($res, 0, 'cryptmode'))) {
++	// SalesPlatform.ru end
+ 		$password = '*****';
+ 		// TODO - we need to send link to reset the password
+ 		// For now CRM user can do the same.
+diff -r 3b96a8386060 -r e6c03eaed449 spServicePackVersion.txt
+--- a/spServicePackVersion.txt	Fri Nov 18 11:45:08 2016 +0400
++++ b/spServicePackVersion.txt	Tue Dec 20 18:49:47 2016 +0300
+@@ -1,1 +1,1 @@
+-6.5.0-201611
++6.5.0-201611 Service Pack 01
+diff -r 3b96a8386060 -r e6c03eaed449 vtlib/Vtiger/Functions.php
+--- a/vtlib/Vtiger/Functions.php	Fri Nov 18 11:45:08 2016 +0400
++++ b/vtlib/Vtiger/Functions.php	Tue Dec 20 18:49:47 2016 +0300
+@@ -1,4 +1,4 @@
+-<?php
++<?php 
+ /*+**********************************************************************************
+  * The contents of this file are subject to the vtiger CRM Public License Version 1.0
+  * ("License"); You may not use this file except in compliance with the License
+@@ -582,7 +582,10 @@
+ 				if (!$ok) return false;
+ 			}
+ 		} else {
+-			if (stripos($data, $short ? "<?" : "<?php") !== false) { // suspicious dynamic content 
++            //SalesPlatform.ru begin Fix image sending
++			//if (stripos($data, $short ? "<?" : "<?php") !== false) { // suspicious dynamic content 
++            if (stripos($data, "<? ") !== false || stripos($data, "<?php ") !== false) { // suspicious dynamic content
++            //SalesPlatform.ru end
+ 				return false;
+ 			}
+ 		}
+@@ -624,7 +627,10 @@
+ 		// Check for php code injection
+ 		if ($saveimage == 'true') {
+ 			$imageContents = file_get_contents($file_details['tmp_name']);
+-			if (stripos($imageContents, $shortTagSupported ? "<?" : "<?php") !== false) { // suspicious dynamic content.
++            //SalesPlatform.ru begin Fix image sending
++			if (stripos($imageContents, "<? ") !== false || stripos($imageContents, "<?php ") !== false) { // suspicious dynamic content.
++            //if (stripos($imageContents, $shortTagSupported ? "<?" : "<?php") !== false) { // suspicious dynamic content.
++            //SalesPlatform.ru end
+ 				$saveimage = 'false';
+ 			}
+ 		}
