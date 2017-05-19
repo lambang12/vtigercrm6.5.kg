@@ -50,7 +50,6 @@ $HELPDESK_SUPPORT_EMAIL_REPLY_ID = $HELPDESK_SUPPORT_EMAIL_ID;
 $dbconfig['db_server'] = 'localhost';
 $dbconfig['db_port'] = ':3306';
 $dbconfig['db_username'] = 'root';
-$dbconfig['db_username'] = 'root';
 $dbconfig['db_password'] = '';
 $dbconfig['db_name'] = 'vtigercrm6_5';
 $dbconfig['db_type'] = 'mysqli';
