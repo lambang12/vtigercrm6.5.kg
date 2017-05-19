@@ -19,6 +19,5 @@
  */
  
 include('config.inc.php');
-echo "hello";
 
 ?>
