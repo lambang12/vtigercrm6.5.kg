@@ -13,81 +13,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Connector.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/runtime/cache/Connector.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connectors.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/runtime/cache/Connectors.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cache/images/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cache/import/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cache/upload/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.phpmailer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cron/class.phpmailer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/Index.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="AdvanceFilter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/AdvanceFilter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="85">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -99,7 +29,7 @@
       <file leaf-file-name="Edit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
+            <state relative-caret-position="85">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -112,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Edit.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Edit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Inventory/resources/Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="17">
               <caret line="291" column="0" lean-forward="false" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -125,7 +55,109 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-408">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PBXManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/languages/ru_ru/PBXManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="55" column="11" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/http/Request.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebUI.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/main/WebUI.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/http/Session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libraries/HTTP_Session2/HTTP/Session2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>H</find>
+      <find>i</find>
+      <find>in-por</find>
+      <find>in-po</find>
+      <find>in-progerss</find>
+      <find>in-progers</find>
+      <find>in-proger</find>
+      <find>in-proge</find>
+      <find>in-prog</find>
+      <find>in-pro</find>
+      <find>in-pr</find>
+      <find>in-p</find>
+      <find>in-</find>
+      <find>c</find>
+      <find>compl</find>
+      <find>complet</find>
+      <find>complete</find>
+      <find>completed</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/languages/ru_ru/PBXManager.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -183,11 +215,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vlayout" />
+              <option name="myItemId" value="languages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,71 +229,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="languages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vlayout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vtigercrm6.5.kg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vtigercrm6.5.kg" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vlayout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Inventory" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vtigercrm6.5.kg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vtigercrm6.5.kg" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vlayout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Inventory" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="ru_ru" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,7 +244,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/salesplatform-vtiger-sp-650201611-02/salesplatform-vtiger-sp-650201611-02.patch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -291,7 +259,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.PBXManager.php">
+    <configuration default="false" name="PBXManager.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vtigercrm6.5.kg/languages/ru_ru/PBXManager.php">
+      <method />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -331,6 +302,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -353,6 +330,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.PBXManager.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.PBXManager.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -367,31 +352,32 @@
       <option name="presentableId" value="Default" />
       <updated>1495013158223</updated>
       <workItem from="1495013161229" duration="5644000" />
+      <workItem from="1495186159541" duration="2173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5644000" />
+    <option name="totallyTimeSpent" value="7817000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12664714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41709402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4164038" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -412,387 +398,22 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/AdvanceFilter.js</url>
           <line>12</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/Edit.js</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/SalesOrder/SalesOrderPDFController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/SalesOrder/views/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/runtime/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utils/VtlibUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="659" column="0" lean-forward="false" selection-start-line="659" selection-start-column="0" selection-end-line="659" selection-end-column="0" />
-          <folding>
-            <marker date="1477914552000" expanded="true" signature="1567:1610" ph="SELECT name vtiger_tab" />
-            <marker date="1477914552000" expanded="true" signature="2693:2717" ph="SELECT * FRO... vtiger_tab" />
-            <marker date="1477914552000" expanded="true" signature="3945:3990" ph="SELECT id FR... vtiger_users" />
-            <marker date="1477914552000" expanded="true" signature="4913:4962" ph="UPDATE vtige... " />
-            <marker date="1477914552000" expanded="true" signature="5584:5718" ph="SELECT name,... vtiger_tab" />
-            <marker date="1477914552000" expanded="true" signature="6549:6578" ph="SELECT * FRO... vtiger_language" />
-            <marker date="1477914552000" expanded="true" signature="7210:7264" ph="UPDATE vtige... " />
-            <marker date="1477914552000" expanded="true" signature="7581:7638" ph="SELECT field... vtiger_field" />
-            <marker date="1477914552000" expanded="true" signature="15452:15503" ph="SELECT rolei... vtiger_role" />
-            <marker date="1477914552000" expanded="true" signature="15848:16028" ph="SELECT ${$co... ${$tablename}" />
-            <marker date="1477914552000" expanded="true" signature="16978:17015" ph="SELECT ${$co... ${$tablename}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/http/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Inventory/models/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <marker date="1450875194000" expanded="true" signature="1780:2935" ph="SELECT CASE vtiger_activity" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utils/InventoryUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="340" column="0" lean-forward="false" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
-          <folding>
-            <marker date="1495013790648" expanded="true" signature="2961:3028" ph="select * fro... vtiger_inventorynotification" />
-            <marker date="1495013790648" expanded="true" signature="4333:4391" ph="SELECT qtyin... vtiger_products" />
-            <marker date="1495013790648" expanded="true" signature="4855:4915" ph="SELECT reord... vtiger_products" />
-            <marker date="1495013790648" expanded="true" signature="5437:5494" ph="SELECT taxid... vtiger_inventorytaxinfo" />
-            <marker date="1495013790648" expanded="true" signature="6045:6109" ph="SELECT perce... vtiger_inventorytaxinfo" />
-            <marker date="1495013790648" expanded="true" signature="7089:7329" ph="SELECT taxpe... vtiger_inventorytaxinfo" />
-            <marker date="1495013790648" expanded="true" signature="9236:9297" ph="insert into ${$history_table_array[$module]}... " />
-            <marker date="1495013790648" expanded="true" signature="10439:10479" ph="SELECT * FRO... ${$tablename}" />
-            <marker date="1495013790648" expanded="true" signature="10810:10854" ph="SELECT ${$ta... ${$value_table}" />
-            <marker date="1495013790648" expanded="true" signature="11344:11392" ph="SELECT * FRO... ${$tablename}" />
-            <marker date="1495013790648" expanded="true" signature="12092:12118" ph="select taxna... ${$tablename}" />
-            <marker date="1495013790648" expanded="true" signature="12226:12263" ph="select * fro... ${$value_table}" />
-            <marker date="1495013790648" expanded="true" signature="12990:13058" ph="select * fro... ${$tablename}" />
-            <marker date="1495013790648" expanded="true" signature="13298:13346" ph="select * fro... ${$tablename}" />
-            <marker date="1495013790648" expanded="true" signature="15024:15319" ph="SELECT vtige... vtiger_inventorytaxinfo" />
-            <marker date="1495013790648" expanded="true" signature="15350:15571" ph="SELECT vtige... vtiger_inventorytaxinfo" />
-            <marker date="1495013790648" expanded="true" signature="17378:17476" ph="SELECT produ... vtiger_inventoryproductrel" />
-            <marker date="1495013790648" expanded="true" signature="18004:18084" ph="SELECT produ... vtiger_inventorysubproductrel" />
-            <marker date="1495013790648" expanded="true" signature="18487:18536" ph="delete from " />
-            <marker date="1495013790648" expanded="true" signature="18577:18629" ph="delete from " />
-            <marker date="1495013790648" expanded="true" signature="18670:18720" ph="delete from " />
-            <marker date="1495013790648" expanded="true" signature="20586:20651" ph="UPDATE vtige... " />
-            <marker date="1495013790648" expanded="true" signature="21737:21802" ph="UPDATE vtige... " />
-            <marker date="1495013790648" expanded="true" signature="21857:21938" ph="SELECT produ... vtiger_inventoryproductrel" />
-            <marker date="1495013790648" expanded="true" signature="22408:22488" ph="SELECT produ... vtiger_inventorysubproductrel" />
-            <marker date="1495013790648" expanded="true" signature="26481:26612" ph="insert into vtiger_inventoryproductrel... " />
-            <marker date="1495013790648" expanded="true" signature="27082:27165" ph="insert into vtiger_inventorysubproductrel... " />
-            <marker date="1495013790648" expanded="true" signature="27500:27537" ph="update vtige... " />
-            <marker date="1495013790648" expanded="true" signature="29732:29761" ph="update ${$fo... " />
-            <marker date="1495013790648" expanded="true" signature="33001:33083" ph="insert into vtiger_inventoryshippingrel... " />
-            <marker date="1495013790648" expanded="true" signature="34430:34506" ph="select taxty... ${$inv_table_array[$module]}" />
-            <marker date="1495013790648" expanded="true" signature="36004:36239" ph="select curre... ${$inventory_table}" />
-            <marker date="1495013790648" expanded="true" signature="37281:37359" ph="select ${$ta... vtiger_inventoryproductrel" />
-            <marker date="1495013790648" expanded="true" signature="38116:38176" ph="select ${$ta... vtiger_inventoryshippingrel" />
-            <marker date="1495013790648" expanded="true" signature="38855:38889" ph="select * fro... vtiger_currency_info" />
-            <marker date="1495013790648" expanded="true" signature="40988:41415" ph="select vtige... vtiger_currency_info" />
-            <marker date="1495013790648" expanded="true" signature="41509:41902" ph="select vtige... vtiger_currency_info" />
-            <marker date="1495013790648" expanded="true" signature="43849:43998" ph="select vtige... vtiger_currency_info" />
-            <marker date="1495013790648" expanded="true" signature="45975:46031" ph="select curre... vtiger_service" />
-            <marker date="1495013790648" expanded="true" signature="46054:46111" ph="select curre... vtiger_products" />
-            <marker date="1495013790648" expanded="true" signature="46870:47038" ph="select conve... vtiger_service" />
-            <marker date="1495013790648" expanded="true" signature="47063:47234" ph="select conve... vtiger_products" />
-            <marker date="1495013790648" expanded="true" signature="47292:47351" ph="select conve... vtiger_currency_info" />
-            <marker date="1495013790648" expanded="true" signature="50596:50656" ph="select curre... vtiger_pricebook" />
-            <marker date="1495013790648" expanded="true" signature="50930:50995" ph="UPDATE vtige... " />
-            <marker date="1495013790648" expanded="true" signature="51048:51129" ph="SELECT produ... vtiger_inventoryproductrel" />
-            <marker date="1495013790648" expanded="true" signature="51589:51669" ph="SELECT produ... vtiger_inventorysubproductrel" />
-            <marker date="1495013790648" expanded="true" signature="52174:52255" ph="SELECT produ... vtiger_inventoryproductrel" />
-            <marker date="1495013790648" expanded="true" signature="52715:52795" ph="SELECT produ... vtiger_inventorysubproductrel" />
-            <marker date="1495013790648" expanded="true" signature="53635:53745" ph="SELECT * FRO... ${$tableName}" />
-            <marker date="1495013790648" expanded="true" signature="54313:54464" ph="SELECT * FRO... ${$tableName}" />
-            <marker date="1495013790648" expanded="true" signature="59537:59588" ph="SELECT statu... ${$tableName}" />
-            <marker date="1495013790648" expanded="true" signature="61040:61186" ph="SELECT recor... ${$dbTableName}" />
-            <marker date="1495013790648" expanded="true" signature="62361:62436" ph="SELECT id FR... vtiger_currency_info" />
-            <marker date="1495013790648" expanded="true" signature="62804:62866" ph="SELECT DISTI... vtiger_field" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Inventory/views/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Vtiger/models/Record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/htmlpurifier/library/HTMLPurifier/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/Loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/Smarty/libs/Smarty.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="1499" column="0" lean-forward="false" selection-start-line="1499" selection-start-column="0" selection-end-line="1499" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtlib/Vtiger/Deprecated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="442" column="0" lean-forward="false" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/log4php/LoggerPropertyConfigurator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utils/VTCacheUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utils/CommonUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtlib/Vtiger/Functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/log4php/LoggerManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/SalesOrder/SalesOrder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <marker date="1450875195000" expanded="true" signature="5294:5356" ph="update vtige... " />
-            <marker date="1450875195000" expanded="true" signature="6195:6277" ph="update vtige... " />
-            <marker date="1450875195000" expanded="true" signature="8473:9626" ph="SELECT case vtiger_activity" />
-            <marker date="1450875195000" expanded="true" signature="10431:11659" ph="SELECT vtige... vtiger_activity" />
-            <marker date="1450875195000" expanded="true" signature="12729:13782" ph="select vtige... vtiger_invoice" />
-            <marker date="1450875195000" expanded="true" signature="14455:14809" ph="select vtige... vtiger_sostatushistory" />
-            <marker date="1450875195000" expanded="true" signature="22940:22999" ph="UPDATE vtige... " />
-            <marker date="1450875195000" expanded="true" signature="23128:23191" ph="UPDATE vtige... " />
-            <marker date="1450875195000" expanded="true" signature="23318:23379" ph="UPDATE vtige... " />
-            <marker date="1450875195000" expanded="true" signature="23461:23580" ph="DELETE FROM " />
-            <marker date="1450875195000" expanded="true" signature="25827:27309" ph="SELECT ${$fi... ${$this-&gt;entity_table}" />
-            <marker date="1450875195000" expanded="true" signature="29825:29955" ph="SELECT ${$se... ${$this-&gt;table_name}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/CRMEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/adodb/drivers/adodb-mysqli.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="1040" column="0" lean-forward="false" selection-start-line="1040" selection-start-column="0" selection-end-line="1040" selection-end-column="0" />
-          <folding>
-            <marker date="1450875196000" expanded="true" signature="1136:1267" ph="SELECT TABLE... TABLES" />
-            <marker date="1450875196000" expanded="true" signature="6503:6545" ph="select ${$co... ${$tables}" />
-            <marker date="1450875196000" expanded="true" signature="8371:8394" ph="select count... " />
-            <marker date="1450875196000" expanded="true" signature="8418:8444" ph="insert into " />
-            <marker date="1450875196000" expanded="true" signature="8468:8481" ph="drop table %... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/adodb/adodb.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="3344" column="0" lean-forward="false" selection-start-line="3344" selection-start-column="0" selection-end-line="3344" selection-end-column="0" />
-          <folding>
-            <marker date="1495013795655" expanded="true" signature="37044:37065" ph="SELECT MAX($... ${$table}" />
-            <marker date="1495013795655" expanded="true" signature="44987:45015" ph="select count... ${$table}" />
-            <marker date="1495013795655" expanded="true" signature="45117:45160" ph="select ${$fi... ${$table}" />
-            <marker date="1495013795655" expanded="true" signature="56567:56581" ph="SELECT * FRO... ${$table}" />
-            <marker date="1495013795655" expanded="true" signature="59821:59855" ph="UPDATE ${$ta... " />
-            <marker date="1495013795655" expanded="true" signature="102233:102261" ph="SELECT COUNT... ${$table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/database/PearDatabase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="532" column="0" lean-forward="false" selection-start-line="532" selection-start-column="0" selection-end-line="532" selection-end-column="0" />
-          <folding>
-            <marker date="1477914552000" expanded="true" signature="6461:6549" ph="INSERT INTO ${$logtable}... " />
-            <marker date="1477914552000" expanded="true" signature="17509:17572" ph="INSERT INTO ${$table}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/utils/utils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="348" column="0" lean-forward="false" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
-          <folding>
-            <marker date="1495013791393" expanded="true" signature="4880:4918" ph="SELECT id, u... vtiger_users" />
-            <marker date="1495013791393" expanded="true" signature="5088:5196" ph="select id as... vtiger_users" />
-            <marker date="1495013791393" expanded="true" signature="5088:5992" ph="select id as... " />
-            <marker date="1495013791393" expanded="true" signature="5203:5584" ph="select vtige... vtiger_user2role" />
-            <marker date="1495013791393" expanded="true" signature="5600:5992" ph="select share... vtiger_tmp_write_user_sharing_per" />
-            <marker date="1495013791393" expanded="true" signature="6221:6295" ph="SELECT id, u... vtiger_users" />
-            <marker date="1495013791393" expanded="true" signature="7731:7775" ph="SELECT group... vtiger_groups" />
-            <marker date="1495013791393" expanded="true" signature="15018:15063" ph="select tabla... vtiger_tab" />
-            <marker date="1495013791393" expanded="true" signature="16296:16468" ph="SELECT tabid... vtiger_field" />
-            <marker date="1495013791393" expanded="true" signature="18183:18225" ph="select email... vtiger_users" />
-            <marker date="1495013791393" expanded="true" signature="18951:18996" ph="select id fr... vtiger_users" />
-            <marker date="1495013791393" expanded="true" signature="19831:19884" ph="select * fro... vtiger_actionmapping" />
-            <marker date="1495013791393" expanded="true" signature="20612:20683" ph="select * fro... vtiger_actionmapping" />
-            <marker date="1495013791393" expanded="true" signature="21327:21381" ph="select smown... vtiger_crmentity" />
-            <marker date="1495013791393" expanded="true" signature="21785:21840" ph="select count... " />
-            <marker date="1495013791393" expanded="true" signature="22570:22696" ph="select * fro... vtiger_field" />
-            <marker date="1495013791393" expanded="true" signature="23001:23052" ph="insert into vtiger_profile2field... " />
-            <marker date="1495013791393" expanded="true" signature="23385:23511" ph="select * fro... vtiger_field" />
-            <marker date="1495013791393" expanded="true" signature="23846:23895" ph="insert into vtiger_def_org_field... " />
-            <marker date="1495013791393" expanded="true" signature="24294:24351" ph="update vtige... " />
-            <marker date="1495013791393" expanded="true" signature="24965:25022" ph="UPDATE vtige... " />
-            <marker date="1495013791393" expanded="true" signature="25568:25626" ph="UPDATE vtige... " />
-            <marker date="1495013791393" expanded="true" signature="26185:26242" ph="UPDATE vtige... " />
-            <marker date="1495013791393" expanded="true" signature="26805:26863" ph="UPDATE vtige... " />
-            <marker date="1495013791393" expanded="true" signature="27325:27381" ph="select qtyin... vtiger_products" />
-            <marker date="1495013791393" expanded="true" signature="27938:27995" ph="select qtyin... vtiger_products" />
-            <marker date="1495013791393" expanded="true" signature="28912:29056" ph="select table... vtiger_field" />
-            <marker date="1495013791393" expanded="true" signature="30433:30492" ph="select relat... vtiger_potential" />
-            <marker date="1495013791393" expanded="true" signature="31005:31203" ph="select vtige... vtiger_seactivityrel" />
-            <marker date="1495013791393" expanded="true" signature="31694:31889" ph="select vtige... vtiger_seactivityrel" />
-            <marker date="1495013791393" expanded="true" signature="32399:32584" ph="select paren... vtiger_troubletickets" />
-            <marker date="1495013791393" expanded="true" signature="33122:33173" ph="select accou... vtiger_quotes" />
-            <marker date="1495013791393" expanded="true" signature="33707:33760" ph="select poten... vtiger_quotes" />
-            <marker date="1495013791393" expanded="true" signature="34302:34362" ph="select accou... vtiger_salesorder" />
-            <marker date="1495013791393" expanded="true" signature="34912:34974" ph="select poten... vtiger_salesorder" />
-            <marker date="1495013791393" expanded="true" signature="35505:35563" ph="select quote... vtiger_salesorder" />
-            <marker date="1495013791393" expanded="true" signature="36092:36146" ph="select accou... vtiger_invoice" />
-            <marker date="1495013791393" expanded="true" signature="36681:36738" ph="select sales... vtiger_invoice" />
-            <marker date="1495013791393" expanded="true" signature="41782:41941" ph="select field... vtiger_field" />
-            <marker date="1495013791393" expanded="true" signature="42640:42933" ph="select disti... vtiger_" />
-            <marker date="1495013791393" expanded="true" signature="42960:43227" ph="select disti... vtiger_" />
-            <marker date="1495013791393" expanded="true" signature="43166:43196" ph="select pickl... vtiger_" />
-            <marker date="1495013791393" expanded="true" signature="46241:46298" ph="update vtige... " />
-            <marker date="1495013791393" expanded="true" signature="46722:46781" ph="select produ... vtiger_products" />
-            <marker date="1495013791393" expanded="true" signature="47182:47254" ph="update vtige... " />
-            <marker date="1495013791393" expanded="true" signature="47743:47805" ph="select price... vtiger_pricebook" />
-            <marker date="1495013791393" expanded="true" signature="49755:49811" ph="select * fro... vtiger_asteriskextensions" />
-            <marker date="1495013791393" expanded="true" signature="50627:50693" ph="select * fro... vtiger_asteriskextensions" />
-            <marker date="1495013791393" expanded="true" signature="51088:51154" ph="select * fro... vtiger_asteriskextensions" />
-            <marker date="1495013791393" expanded="true" signature="51626:51692" ph="select * fro... vtiger_asteriskextensions" />
-            <marker date="1495013791393" expanded="true" signature="52243:52446" ph="INSERT INTO vtiger_crmentity... " />
-            <marker date="1495013791393" expanded="true" signature="52596:52692" ph="insert into vtiger_pbxmanager... " />
-            <marker date="1495013791393" expanded="true" signature="53259:53626" ph="SELECT vtige... vtiger_field" />
-            <marker date="1495013791393" expanded="true" signature="60066:60299" ph="select disti... vtiger_field" />
-            <marker date="1495013791393" expanded="true" signature="60716:60778" ph="SELECT crmid... vtiger_crmentity" />
-            <marker date="1495013791393" expanded="true" signature="64336:64397" ph="SELECT prefn... vtiger_tab_info" />
-            <marker date="1495013791393" expanded="true" signature="64953:65007" ph="SELECT block... vtiger_blocks" />
-            <marker date="1495013791393" expanded="true" signature="69324:69378" ph="SELECT * FRO... vtiger_cntactivityrel" />
-            <marker date="1495013791393" expanded="true" signature="69996:70069" ph="SELECT conve... vtiger_leaddetails" />
-            <marker date="1495013791393" expanded="true" signature="73324:73648" ph="SELECT vtige... vtiger_account" />
-            <marker date="1495013791393" expanded="true" signature="73773:74116" ph="SELECT vtige... vtiger_contactdetails" />
-            <marker date="1495013791393" expanded="true" signature="74238:74557" ph="SELECT vtige... vtiger_leaddetails" />
-            <marker date="1495013791393" expanded="true" signature="77368:77408" ph="select * fro... vtiger_organizationdetails" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/runtime/Cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/runtime/cache/Connector.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
+        <state relative-caret-position="272">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
@@ -840,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/Index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
@@ -848,7 +469,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/AdvanceFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -858,7 +479,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
+        <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -872,12 +493,333 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Inventory/resources/Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="4947">
           <caret line="291" column="0" lean-forward="false" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <marker date="1495013791616" expanded="true" signature="17521:17527" ph=" " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/SalesOrder/SalesOrderPDFController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/SalesOrder/views/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/runtime/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utils/VtlibUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="659" column="0" lean-forward="false" selection-start-line="659" selection-start-column="0" selection-end-line="659" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Inventory/models/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utils/InventoryUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="340" column="0" lean-forward="false" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Inventory/views/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Vtiger/models/Record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/htmlpurifier/library/HTMLPurifier/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/Smarty/libs/Smarty.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="1499" column="0" lean-forward="false" selection-start-line="1499" selection-start-column="0" selection-end-line="1499" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtlib/Vtiger/Deprecated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="442" column="0" lean-forward="false" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/log4php/LoggerPropertyConfigurator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utils/VTCacheUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utils/CommonUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtlib/Vtiger/Functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/log4php/LoggerManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/SalesOrder/SalesOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/CRMEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/adodb/drivers/adodb-mysqli.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="1040" column="0" lean-forward="false" selection-start-line="1040" selection-start-column="0" selection-end-line="1040" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/adodb/adodb.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="3344" column="0" lean-forward="false" selection-start-line="3344" selection-start-column="0" selection-end-line="3344" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/database/PearDatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="532" column="0" lean-forward="false" selection-start-line="532" selection-start-column="0" selection-end-line="532" selection-end-column="0" />
+          <folding>
+            <marker date="1477914552000" expanded="true" signature="6461:6549" ph="INSERT INTO ${$logtable}... " />
+            <marker date="1477914552000" expanded="true" signature="17509:17572" ph="INSERT INTO ${$table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utils/utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="348" column="0" lean-forward="false" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/runtime/Cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/runtime/cache/Connector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/runtime/cache/Connectors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/images/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/import/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/upload/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron/class.phpmailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/Index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/AdvanceFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Vtiger/resources/Edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1477914550000" expanded="true" signature="54206:54251" ph="..." />
+            <marker date="1477914550000" expanded="true" signature="55065:55108" ph="..." />
+            <marker date="1477914550000" expanded="true" signature="55228:55255" ph="..." />
+            <marker date="1477914550000" expanded="true" signature="55435:55462" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/vlayout/modules/Inventory/resources/Edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="291" column="0" lean-forward="false" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1495013791616" expanded="true" signature="17521:17527" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/ru_ru/PBXManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="55" column="11" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/http/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/main/WebUI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/http/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/HTTP_Session2/HTTP/Session2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

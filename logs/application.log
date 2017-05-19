@@ -22,3 +22,177 @@ Message - Call to a member function FetchRow() on boolean
 File - D:\OpenServer\domains\vtigercrm6.5.kg\include\database\PearDatabase.php
 Line - 532
 
+[2017-05-19 12:48:27] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:48:41] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:48:50] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:48:53] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:49:03] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:49:09] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:49:33] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:49:34] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:49:35] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:49:56] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:51:20] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:51:29] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:51:32] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:52:16] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:52:31] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:53:35] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:53:45] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:53:52] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:54:29] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:57:34] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:57:46] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:57:47] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 12:59:15] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 13:00:56] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 13:00:58] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 13:01:22] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 13:01:52] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 13:02:14] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
+[2017-05-19 13:02:17] Error on process request. Details: 
+Code - 1
+Message - Class 'Settings_PBXManager_Record_Model' not found
+File - D:\OpenServer\domains\vtigercrm6.5.kg\modules\Settings\PBXManager\views\Index.php
+Line - 22
+
